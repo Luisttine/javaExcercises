@@ -1,0 +1,11 @@
+package Package;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Produto obj = new Produto("batata","ruffles");
+		
+		System.out.println("Nome: "+Produto.nome);
+		System.out.println("Nome: "+Produto.marca);
+	}
+}

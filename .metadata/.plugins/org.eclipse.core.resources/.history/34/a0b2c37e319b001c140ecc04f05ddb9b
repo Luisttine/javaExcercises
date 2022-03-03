@@ -1,0 +1,11 @@
+package Package;
+
+public class produto {
+	String nome;
+	String marca;
+	
+	public produto(String nome, String marca) {
+		this.nome = nome;
+		this.marca = marca;
+	}
+}
