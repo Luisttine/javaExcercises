@@ -7,10 +7,16 @@ public class Aluno{
 	private String rg;
 	private String cpf;
 	
-	public Aluno(int ra2, String nome2, String string, String rg2, String cpf2) {
-		// TODO Auto-generated constructor stub
+	public Aluno(int ra, String nome, char string, String rg, String cpf) {
+		super();
+		this.ra = ra;
+		this.nome = nome;
+		this.setSexo(string);
+		this.rg = rg;
+		this.cpf = cpf;
 	}
-	public int getRa(int ra) {
+
+	public int getRa() {
 		return ra;
 	}
 	public void setRa(int ra) {
@@ -18,7 +24,7 @@ public class Aluno{
 	}
 	
 	
-	public String getNome(String nome) {
+	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
@@ -26,7 +32,7 @@ public class Aluno{
 	}
 	
 	
-	public String getRg(String rg) {
+	public String getRg() {
 		return rg;
 	}
 	public void setRg(String rg) {
@@ -46,17 +52,8 @@ public class Aluno{
 		return sexo;
 	}
 
-	public void setSexo(char sexo) {
-		this.sexo = sexo;
-	}
-	
-	public Aluno(int ra, String nome, char sexo, String rg, String cpf) {
-		super();
-		this.ra = ra;
-		this.nome = nome;
-		this.setSexo(sexo);
-		this.rg = rg;
-		this.cpf = cpf;
+	public void setSexo(char string) {
+		this.sexo = string;
 	}
 
 }	
